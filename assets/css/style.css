@@ -259,14 +259,14 @@ input {
 /*=============== MAIN ===============*/
 
 .main {
-    margin-right: 120px;
-    width: 1230px;
+    /* margin-right: 120px; */
+    /* width: 1230px; */
 }
 
 /*===== Home Section =====*/
 
 .home {
-    background-image:url("../images/home-light-bbg.png") ;
+    /* background-image:url("../images/home-light-bbg.png") ; */
     background-size: cover;
     background-position: center center; 
 
@@ -1241,10 +1241,15 @@ textarea.input {
     .about__container {
         grid-template-columns: 1fr;
         row-gap: 2.5rem;
+        justify-content: center;
+        align-items: center;
     }
 
     .about__img {
-        width: 350px;
+        width: 400px;
+        margin: auto;
+       
+        /* width: 100%; */
     }
 
     .about__data {
@@ -1315,7 +1320,7 @@ textarea.input {
 @media screen and (max-width: 768px) {
 
     .about__img {
-        width: 250px;
+        width: 300px;
     }
 
     .qualification__container {
@@ -1338,7 +1343,7 @@ textarea.input {
     }
 
     .services__content {
-        padding: 3.5rem .5rem 1.25rem 1.5rem;
+        padding: 3.5rem 1.5rem 1.25rem ;
     }
 
     .services__icon {
@@ -1371,9 +1376,11 @@ textarea.input {
     .footer__copy {
         margin-top: var(--mb-3);
     }
-
+    .portfolio__popup {
+        padding-top: 4rem;
+    }
     .portfolio__popup-inner {
-        width: 460px;
+        width: 480px;
         padding: 2.8rem 1.5rem 2.5rem;
     }
 
@@ -1394,8 +1401,8 @@ textarea.input {
 @media screen and (max-width: 576px) {
 
     .nav__toggle {
-        right: initial;
-        left: 1.5rem;
+        left: initial;
+        right: 1.5rem;
     }
 
     .home__container {
@@ -1417,7 +1424,7 @@ textarea.input {
 
     .home__social {
         left: initial;
-        right: -1rem;
+        right: 1rem;
         flex-direction: column;
         row-gap: 3.5rem;
     }
@@ -1448,8 +1455,23 @@ textarea.input {
         padding: 0;
     }
 
+    .portfolio__popup {
+        padding-top: 2rem;
+    }
+    .portfolio__popup-inner {
+        width: 400px;
+        padding: 2.8rem 1.5rem 2.5rem;
+    }
+    .portfolio__popup-close {
+        top: .5rem;
+    }
+    /* .portfolio__popup-content {
+        grid-template-columns: 1fr;
+        row-gap: 1.6rem;
+    }  */
     .services__model-content {
         padding: 4.5rem 1.5rem 2.5rem;
+        margin-left: 1rem;
     }
 
     .services__model-description {
@@ -1457,16 +1479,18 @@ textarea.input {
     }
 
     .work__container ,
-    .contact__container  {
-        grid-template-columns: 300px;
+    .contact__container ,
+    .services__container  {
+        grid-template-columns: 320px;
     }
 
     .footer__container {
         grid-template-columns: 1fr;
+        text-align: center;
     }
 
-    .footer__links {
-        justify-self: flex-start;
+    .footer__links , .footer__socials {
+        justify-self: center;
     }
 
 }
@@ -1499,7 +1523,8 @@ textarea.input {
     .contact__container,
     .work__container ,
     .qualification__container ,
-    .skills__container {
+    .skills__container ,
+    .services__container {
         grid-template-columns: 1fr;
     }
     .skills__container {
@@ -1523,6 +1548,21 @@ textarea.input {
     }
 
     .services__content {
-        padding-right: 3.5rem;
+        padding-right: 1.5rem;
+    }
+    .portfolio__popup-img {
+        padding: .5rem;
+        padding-bottom: 0;
+      
+    }
+    .portfolio__popup-inner {
+        width: 300px;
+        padding: 2.8rem 1.5rem 2.5rem;
+    } 
+    .portfolio__popup-close {
+        top: .5rem;
+    } 
+    .details__description  {
+        margin-bottom: var(--mb-1);
     }
 }
