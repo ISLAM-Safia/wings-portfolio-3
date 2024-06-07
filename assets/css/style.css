@@ -267,7 +267,7 @@ input {
 /*===== Home Section =====*/
 
 .home {
-    /* background-image:url("../images/home-light-bbg.png") ; */
+    background-image:url("../images/home-bg-removebg-preview.jpg") ;
     background-size: cover;
     background-position: center center; 
 
@@ -1322,6 +1322,9 @@ textarea.input {
 /* For Medium Devices */
 @media screen and (max-width: 768px) {
 
+    body {
+        overflow-x: hidden;
+    }
     .about__img {
         width: 300px;
     }
@@ -1403,6 +1406,9 @@ textarea.input {
 
 @media screen and (max-width: 576px) {
 
+    body {
+        overflow-x: hidden;
+    }
     .nav__toggle {
         left: initial;
         right: 1.5rem;
@@ -1501,6 +1507,9 @@ textarea.input {
 /* For Small Devices */
 @media screen and (max-width: 350px) {
 
+    body {
+        overflow-x: hidden;
+    } 
     .container {
         margin-left: var(--mb-1);
         margin-right: var(--mb-1);
