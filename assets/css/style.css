@@ -251,7 +251,7 @@ input {
     font-size: 1.5rem;
     position: absolute;
     top: 1rem;
-    right: 1.25rem;
+    left: 1.25rem;
     cursor: pointer;
     display: none;
 }
@@ -1193,6 +1193,13 @@ textarea.input {
         grid-template-columns: repeat(2,330px);
         gap: 2.5rem;
     }
+    /* .sidebar {
+        width: 100%;
+        z-index: 1000;
+        transform: translateX(-100%);
+    } */
+
+
 }
 
 @media screen and (max-width: 1024px) {
@@ -1331,6 +1338,12 @@ textarea.input {
         margin-bottom: var(--mb-0-75);
     }
 
+    .nav__toggle {
+        left: initial !important ;
+        right: 1.5rem !important;
+        z-index: 10000 !important;
+    }
+
 }
 
 /* For Medium Devices */
@@ -1341,6 +1354,12 @@ textarea.input {
     }
     .about__img {
         width: 300px;
+    }
+
+    .nav__toggle {
+        left: initial !important ;
+        right: 1.5rem !important;
+        z-index: 10000 !important;
     }
 
     .qualification__container {
