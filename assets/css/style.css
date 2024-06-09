@@ -260,7 +260,7 @@ input {
 /*=============== MAIN ===============*/
 
 .main {
-    margin-right: 120px;
+    margin-right: 100px;
     /* width: 1230px; */
 }
 
@@ -593,6 +593,18 @@ input {
 .work__img {
     border-radius: .5rem;
     margin-bottom: var(--mb-1);
+}
+.web  img {
+    height: 250px;
+
+}
+.design {
+    display: flex;
+}
+.design-img{
+    height: 280px;
+    width: 50%;
+    
 }
 
 .work__title {
@@ -1161,6 +1173,7 @@ textarea.input {
         margin-right: auto;
         margin-left: auto;
     }
+
 }
 
 @media screen and (max-width: 1216px) {
@@ -1240,7 +1253,7 @@ textarea.input {
     }
 
     .main {
-        margin-left: 0;
+        margin-right: 0;
     }
 
     .about__container {
@@ -1253,8 +1266,7 @@ textarea.input {
     .about__img {
         width: 400px;
         margin: auto;
-       
-        /* width: 100%; */
+
     }
 
     .about__data {
@@ -1412,8 +1424,8 @@ textarea.input {
         overflow-x: hidden;
     }
     .nav__toggle {
-        left: initial;
-        right: 1.5rem;
+        right: initial;
+        left: 1.5rem;
     }
 
     .home__container {
