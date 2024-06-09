@@ -1592,7 +1592,7 @@ textarea.input {
         margin-bottom: var(--mb-1);
     }
 }
-
+/* 
 #blog{
     display: flex;
     flex-direction: column;
@@ -1678,4 +1678,4 @@ textarea.input {
     #blog{
         padding:20px;
     }
-}
+} */
