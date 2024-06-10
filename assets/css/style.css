@@ -965,7 +965,7 @@ input {
 }
 
 .contact__button {
-    color: var(--skin-color);
+    color: var(--text-color);
     font-size: var(--small-font-size);
     display: flex;
     align-items: center;
