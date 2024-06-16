@@ -16,10 +16,10 @@
 </head>
 <body>
     <!-- SIDEBAR -->
-    <div class="nav__toggle" id="nav-toggle">
+    <!-- <div class="nav__toggle" id="nav-toggle">
         <i class="uil uil-bars"></i>
-    </div>
-    <aside class="sidebar" id="sidebar">
+    </div> -->
+    <!-- <aside class="sidebar" id="sidebar">
         <nav class="nav">
             <div class="nav__logo">
                 <img src="assets/images/logo.png" alt="">
@@ -52,8 +52,57 @@
                 <i class="uil uil-times"></i>
             </div>
         </nav>
-    </aside>
+    </aside> -->
 
+    <header class="header " id="header" style="direction: ltr;">
+        <nav class="nav container">
+            <a href="" class="nav__logo">aLexa</a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list grid">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class="uil uil-estate nav__icon"></i>الرئيسية
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">
+                            <i class="uil uil-user nav__icon"></i>من نحن
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#work" class="nav__link">
+                            <i class="uil uil-scenery nav__icon"></i>اعمالنا
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#services" class="nav__link">
+                            <i class="uil uil-briefcase nav__icon"></i>الخدمات
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#blog" class="nav__link">
+                            <i class="uil uil-postcard nav__icon"></i> المدونة
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">
+                            <i class="uil uil-message nav__icon"></i>تواصل معنا
+                        </a>
+                    </li>
+                </ul>
+                <i class="uil uil-times nav__close" id="nav-close"></i>
+            </div>
+            <div class="nav__btns">
+                <!-- Theme Chande Btn -->
+                <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="uil uil-apps"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
     <!-- =============== MAIN ================ -->
     <main class="main">
     <!-- =============== HOME  ================ -->
@@ -98,32 +147,31 @@
                 <h3 class="about__heading our__mission">مهمتنا</h3>
                 <p class="about__description ">ندرك أهمية التعاون بشكل لا يدع مجالاً للشك، مما يجعل مهمتنا لا مفر منها وواجبة بحق، وهو صناعة قيم حقيقية من خلال الاستماع الفعّال للاحتياجات وفهم الرغبات. نسعى معًا لتطوير حلول فعّالة تسهّل تواصل العلامة التجارية مع جمهورها المستهدف.</p>
             </div>
-            <img src="assets/images/about-section-img113.jpg" alt="About Img" class="about__img">
+            <img src="assets/images/about-sec.jpg" alt="About Img" class="about__img">
 
-                    <div class="about__info grid">
-                        <div class="about__box">
-                            <i class="about__icon uil uil-award"></i>
-                            <h3 class="about__title">الخبرة</h3>
-                            <span class="about__subtitle">8 + سنوات</span>
-                        </div>
-                        <div class="about__box">
-                            <i class="about__icon uil uil-award"></i>
-                            <h3 class="about__title">الخبرة</h3>
-                            <span class="about__subtitle">8 + سنوات</span>
-                        </div>
-
-                        <div class="about__box">
-                            <i class="about__icon uil uil-suitcase"></i>
-                            <h3 class="about__title">مكتمل</h3>
-                            <span class="about__subtitle">48 + مشروع</span>
-                        </div>
-
-                        <div class="about__box">
-                            <i class="about__icon uil uil-headphones"></i>
-                            <h3 class="about__title">الدعم</h3>
-                            <span class="about__subtitle">متصل 15/15</span>
-                        </div>
-                    </div>
+            <div class="about__info grid">
+                <div class="about__box">
+                    <i class="about__icon uil uil-award"></i>
+                    <h3 class="about__title"> <span class="count" data-target="08">0</span>+</h3>
+                    <span class="about__subtitle"> سنوات الخبرة</span>
+                </div>
+                <div class="about__box">
+                    <i class="about__icon uil uil-map-marker-alt"></i>
+                    <h3 class="about__title"><span class="count" data-target="30">0</span>+</h3>
+                    <span class="about__subtitle"> عدد الشركات</span>
+                </div>
+                <div class="about__box">
+                    <i class="about__icon uil uil-suitcase"></i>
+                    <h3 class="about__title"><span class="count" data-target="48">0</span>+</h3>
+                    <span class="about__subtitle"> المشار يع المنجزة</span>
+                </div>
+                <div class="about__box">
+                    <i class="about__icon uil uil-headphones"></i>
+                    <h3 class="about__title">الدعم</h3>
+                    <span class="about__subtitle">متصل 15/15</span>
+                </div>
+            </div>
+            
 
         </div>
     </section>
@@ -146,13 +194,11 @@
                 </span>
 
                 <div class="portfolio__item-details">
-                    <h3 class="details__title">The services provide for design</h3>
-                    <p class="details__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus quae saepe omnis.</p>
+                    <h3 class="details__title">The best guide to perform your service</h3>
                     <ul class="details__info">
-                        <li>Created - <span>4 dec 2022</span></li>
-                        <li>Technologies - <span>html css js</span></li>
-                        <li>Role - <span>frontend </span></li>
-                        <li>View - <span><a href="#">www.portfolio.com</a></span></li>
+                        <li>الانشاء - <span> May 2nd 2023</span></li>
+                        <li>Technologies - <span>XD</span></li>
+
                     </ul>
                 </div>
             </div>
@@ -164,14 +210,12 @@
                     <i class="uil uil-arrow-left work__button-icon"></i>
                 </span>
 
+
                 <div class="portfolio__item-details">
-                    <h3 class="details__title">Mobile app landing design & app maintain.</h3>
-                    <p class="details__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus quae saepe omnis.</p>
+                    <h3 class="details__title">Best Smartly PDF </h3>
                     <ul class="details__info">
-                        <li>Created - <span>4 dec 2022</span></li>
-                        <li>Technologies - <span>html css js</span></li>
-                        <li>Role - <span>frontend </span></li>
-                        <li>View - <span><a href="#">www.portfolio.com</a></span></li>
+                        <li>الانشاء - <span> August 20th 2022</span></li>
+                        <li>Technologies - <span>XD</span></li>
                     </ul>
                 </div>
             </div>
@@ -182,36 +226,16 @@
                     <i class="uil uil-arrow-left work__button-icon"></i>
                 </span>
 
+
                 <div class="portfolio__item-details">
-                    <h3 class="details__title">Mobile app landing design & app maintain.</h3>
-                    <p class="details__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus quae saepe omnis.</p>
+                    <h3 class="details__title">AAMEN APP</h3>
                     <ul class="details__info">
-                        <li>Created - <span>4 dec 2022</span></li>
-                        <li>Technologies - <span>html css js</span></li>
-                        <li>Role - <span>frontend </span></li>
-                        <li>View - <span><a href="#">www.portfolio.com</a></span></li>
+                        <li>الانشاء - <span> September 8th 2022</span></li>
+                        <li>Technologies - <span>XD / FIGMA</span></li>
                     </ul>
                 </div>
             </div>
 
-            <div class="work__card mix web">
-                <img src="assets/images/Capture3.PNG" alt="UIUX-4" class="work__img">
-                <h3 class="work__title">نصميم وبرمجة المواقع</h3>
-                <span class="work__button">عرض
-                    <i class="uil uil-arrow-left work__button-icon"></i>
-                </span>
-
-                <div class="portfolio__item-details">
-                    <h3 class="details__title">Mobile app landing design & app maintain.</h3>
-                    <p class="details__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus quae saepe omnis.</p>
-                    <ul class="details__info">
-                        <li>Created - <span>4 dec 2022</span></li>
-                        <li>Technologies - <span>html css js</span></li>
-                        <li>Role - <span>frontend </span></li>
-                        <li>View - <span><a href="#">www.portfolio.com</a></span></li>
-                    </ul>
-                </div>
-            </div>
 
             <div class="work__card mix app" >
                 <img src="assets/images/work-5.webp" alt="app-1" class="work__img">
@@ -222,12 +246,9 @@
 
                 <div class="portfolio__item-details">
                     <h3 class="details__title">Mobile app landing design & app maintain.</h3>
-                    <p class="details__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus quae saepe omnis.</p>
                     <ul class="details__info">
                         <li>Created - <span>4 dec 2022</span></li>
-                        <li>Technologies - <span>html css js</span></li>
-                        <li>Role - <span>frontend </span></li>
-                        <li>View - <span><a href="#">www.portfolio.com</a></span></li>
+                        <li>Technologies - <span>Flutter Framework</span></li>
                     </ul>
                 </div>
             </div>
@@ -241,12 +262,9 @@
 
                 <div class="portfolio__item-details">
                     <h3 class="details__title">Mobile app landing design & app maintain.</h3>
-                    <p class="details__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus quae saepe omnis.</p>
                     <ul class="details__info">
-                        <li>Created - <span>4 dec 2022</span></li>
-                        <li>Technologies - <span>html css js</span></li>
-                        <li>Role - <span>frontend </span></li>
-                        <li>View - <span><a href="#">www.portfolio.com</a></span></li>
+                        <li>Created - <span>7 Nov 2022</span></li>
+                        <li>Technologies - <span>Flutter Framework</span></li>
                     </ul>
                 </div>
             </div>
@@ -260,12 +278,9 @@
 
                 <div class="portfolio__item-details">
                     <h3 class="details__title">Mobile app landing design & app maintain.</h3>
-                    <p class="details__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus quae saepe omnis.</p>
                     <ul class="details__info">
-                        <li>Created - <span>4 dec 2022</span></li>
-                        <li>Technologies - <span>html css js</span></li>
-                        <li>Role - <span>frontend </span></li>
-                        <li>View - <span><a href="#">www.portfolio.com</a></span></li>
+                        <li>Created - <span>10 May 2022</span></li>
+                        <li>Technologies - <span>Flutter Framework</span></li>
                     </ul>
                 </div>
             </div>
@@ -309,14 +324,12 @@
                 </div>
 
                 <div class="portfolio__popup-info">
-                    <div class="portfolio__popup-subtitle">Featured - <span>Design</span></div>
+                    <div class="portfolio__popup-subtitle"> - <span>Design</span></div>
                     <div class="portfolio__popup-body">
                             <h3 class="details__title">The services provide for design</h3>
-                            <p class="details__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus quae saepe omnis.</p>
                             <ul class="details__info">
                                 <li>Created - <span>4 dec 2022</span></li>
                                 <li>Technologies - <span>html css js</span></li>
-                                <li>Role - <span>frontend </span></li>
                                 <li>View - <span><a href="#">www.portfolio.com</a></span></li>
                             </ul>
                     </div>
@@ -396,7 +409,7 @@
                 <div class="services__model">
                     <div class="services__model-content">
                     <i class="uil uil-times services__model-close"></i>
-                        <h3 class="services__model-title">برمجة المواقع الالكترونية</h3>
+                        <h3 class="services__model-title">برمجة المواقع </h3>
                         <p class="services__model-description">إذا كانت لديك فكرة مشروع تجاري وتحتاج إلى تصميم موقع إلكتروني أو لديك موقع ويحتاج إلى لتطوير، فأنت في المكان الصحيح!
                             نقدم لك أفضل خدمات تصميم وتطوير المواقع الإلكترونية لإدارة أعمالك بشكل أسهل والحصول على منصة تسويقية احترافية تشمل عرض جميع خدماتك، منتجات متجرك أو الهوية الشخصية لك ولشركتك.
                             </p>
@@ -509,6 +522,24 @@
         </div>
     </section>
 
+    <section class=" section">
+
+        <div class="img-dark-bg">
+        <div class="img-section__container container grid">
+            <img src="assets/images/img-section.jpg" alt="About Img" class="sec__img-dark">
+            <div class="img__data-section">
+                <h3 class="img__heading-sec">بالشراكة مع</h3>
+                <p class="img__description-sec">«لكـن يجـب أن أشرح لـك كيـف ولـدت كل هـذه الفكـرة الخاطئـة المتمثلـة
+                    ً فـي إدانـة الـسرور ومـدح الألـم ، وسـأقدم لـك وصف ً ـا كامـلا للنظـام ، وأشرح
+                    التعاليـم الفعليـة للمستكشـف العظيـم للحقيقـة ، البانـي البـارع. السـعادة
+                    البشريــة. لا أحــد يرفــض أو يكــره أو يتجنــب المتعــة نفســها ، لأنهــا متعــة ،
+                    ولكـن لأن أولئـك الذيـن لا يعرفـون كيفيـة السـعي وراء المتعـة يواجهـون
+                    عواقب مؤلمة للغاية  </p>
+            </div>
+        </div>
+    </div>
+    </section>
+
     <!--================= Testimonials=================-->
     <!-- <section class="testimonials section">
         <h2 data-heading="ماذا يقول عملائنا" class="section__title">Testimonials</h2>
@@ -614,11 +645,12 @@
             <!-- <div class="contact__content"> -->
                 <div class="contact__info">
                     <div class="contact__card">
-                        <i class="uil uil-envelope-edit contact__card-icon"></i>
-                        <h3 class="contact__card-title">راسلنا</h3>
-                        <span class="contact__card-data">info@wingsksa.com</span>
+                        <!-- <i class="uil uil-envelope-edit contact__card-icon"></i> -->
+                        <i class="uil uil-map-marker contact__card-icon"></i>
+                        <h3 class="contact__card-title">موقعنا</h3>
+                        <span class="contact__card-data">مقر الشركة</span>
                         <a href="mailto:info@wingsksa.com" class="contact__button">
-                            اكتب لنا  <i class="uil uil-arrow-left contact__button-icon"></i>
+                            السعودية -   شارع الرياض      
                         </a>
                     
                     </div>
@@ -640,33 +672,34 @@
                     </div>
                 </div>
 
-            <!-- <div class="contact__content"  >
-                <form action="" class="contact___form">
+            <div class="contact__content"  >
+                <form action="" class="contact___form" id="contact-form">
                     <div class="input__container">
-                        <input type="text" class="input">
+                        <input type="text" class="input" name="user_name">
                         <label for="">اسم المستخدم</label>
                         <span>Username</span>
                     </div>
                     <div class="input__container">
-                        <input type="email" class="input">
+                        <input type="email" class="input" name="user_email">
                         <label for="">الايميل</label>
                         <span>Email</span>
                     </div>
                     <div class="input__container">
-                        <input type="tel" class="input">
+                        <input type="tel" class="input" name="mobile_number">
                         <label for="">الهاتف</label>
                         <span>Phone</span>
                     </div>
                     <div class="input__container textarea">
-                        <textarea name="" id=""  class="input"></textarea>
+                        <textarea name="mssg" id=""  class="input" ></textarea>
                         <label for="">رسالة</label>
                         <span>Message</span>
                     </div>
                     <button type="submit" class="button" >
                         <i class="uil uil-message button__icon"></i>اترك رسالة
                     </button>
+                    <p id="contact-msg" style="color: green;margin-top: 1rem;"></p>
                 </form>
-            </div> -->
+            </div>
         </div>
     </section>
 
@@ -706,15 +739,23 @@
             <p class="footer__copy">&#169; WingsDigitalAgency All right reserved</p>
         </div>
     </footer>
+    <!-- =============== SCROLL TOP ================ -->
 
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
 
     </main>
 
     <!-- =============== SCROLL UP ================ -->
+             <!--========== SCROLL REVEAL ==========-->
+             <script src="https://unpkg.com/scrollreveal"></script>
     <!-- =============== MIXITUP FILTER ================ -->
     <script src="assets/js/mixitup.min.js" defer></script>
     <!-- =============== SWIPER JS ================ -->
     <!-- <script src="assets/js/swiper-bundle.min.js"></script> -->
+    <!-- =============== EMAIL JS ================ -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <!-- =============== MAIN JS ================ -->
     <script src="assets/js/main.js" defer></script>
 </body>
