@@ -822,6 +822,7 @@ input {
     text-align: center;
     box-shadow: 0 2px 4px rgb(0, 0, 0 , .15);
     transition: .3s;
+    transform: none;
 }
 
 .services__content:hover {
@@ -1950,6 +1951,8 @@ textarea.input {
 
     .services__content {
         padding-right: 1.5rem;
+        transform: none;
+        transition: none;
     }
     .portfolio__popup-img {
         padding: .5rem;
