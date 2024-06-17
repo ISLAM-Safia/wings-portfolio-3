@@ -301,31 +301,71 @@ themeButton.addEventListener('click', () => {
 })
 
 
+  // /* =============== sticky navbar=========================== */
+
+  let header = document.querySelector('header');
+  header.classList.toggle('sticky', window.scrollY > 100);
+
+
+
+
+
+
+// const sr = ScrollReveal({
+//     origin: 'top',
+//     distance: '30px',
+//     duration: 2000,
+//     reset: true
+// });
+
+// sr.reveal(`.home__data, .home__img,
+//             .about__data, .about__img,
+//             .services__content, .menu__content,
+//             .app__data, .app__img,
+//             .contact__data, .contact__button,
+//             .footer__content`, {
+//     interval: 200
+// })
+
+
+
+// const sr = ScrollReveal({
+//     origin: 'top',
+//     distance: '30px',
+//     duration: 2000,
+//     reset: false  // تعيين إعادة التحريك إلى false
+// });
+
+// sr.reveal(`.home__data, .home__img,
+//             .about__data, .about__img,
+//             .services__content, .menu__content,
+//             .app__data, .app__img,
+//             .contact__data, .contact__button,
+//             .footer__content`, {
+//     interval: 200
+// });
+
 
 
 
 const sr = ScrollReveal({
     origin: 'top',
     distance: '30px',
-    duration: 2000,
-    reset: true
+    duration: 1000, // تقليل مدة التحريك
+    reset: false   // عدم إعادة التحريك عند التمرير
 });
 
+// كشف العناصر الأخرى
 sr.reveal(`.home__data, .home__img,
             .about__data, .about__img,
-            .services__content, .menu__content,
+            .menu__content,
             .app__data, .app__img,
             .contact__data, .contact__button,
             .footer__content`, {
     interval: 200
-})
+});
 
-
-
-
-
-
-
+// يمكن إضافة كشف للخدمات بشكل منفصل مع إعدادات مختلفة إذا لزم الأمر
 
 
 
@@ -357,25 +397,50 @@ window.onload = function() {
 
 /*=============== SERVICES MODAL ===============*/
 
-const modalViews = document.querySelectorAll('.services__model'),
-        modalBtns = document.querySelectorAll('.services__button'),
-        modalCloses = document.querySelectorAll('.services__model-close')
+// const modalViews = document.querySelectorAll('.services__model'),
+//         modalBtns = document.querySelectorAll('.services__button'),
+//         modalCloses = document.querySelectorAll('.services__model-close')
 
 
-let modal = function(modalClick){
-    modalViews[modalClick].classList.add('active-modal')
-}
+// let modal = function(modalClick){
+//     modalViews[modalClick].classList.add('active-modal')
+// }
 
-modalBtns.forEach((modelBtn , i) => {
-    modelBtn.addEventListener('click' , () => {
-        modal(i)
-    })
-})
+// modalBtns.forEach((modelBtn , i) => {
+//     modelBtn.addEventListener('click' , () => {
+//         modal(i)
+//     })
+// })
 
-modalCloses.forEach((modalClose) => {
-    modalClose.addEventListener('click' , () => {
-        modalViews.forEach((modalView) => {
-            modalView.classList.remove('active-modal')
-        })
-    })
-})
+// modalCloses.forEach((modalClose) => {
+//     modalClose.addEventListener('click' , () => {
+//         modalViews.forEach((modalView) => {
+//             modalView.classList.remove('active-modal')
+//         })
+//     })
+// })
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const modalViews = document.querySelectorAll('.services__model'),
+            modalBtns = document.querySelectorAll('.services__button'),
+            modalCloses = document.querySelectorAll('.services__model-close');
+
+        let modal = function(modalClick){
+            modalViews[modalClick].classList.add('active-modal');
+        }
+
+        modalBtns.forEach((modelBtn, i) => {
+            modelBtn.addEventListener('click', () => {
+                modal(i);
+            });
+        });
+
+        modalCloses.forEach((modalClose) => {
+            modalClose.addEventListener('click', () => {
+                modalViews.forEach((modalView) => {
+                    modalView.classList.remove('active-modal');
+                });
+            });
+        });
+    });
+

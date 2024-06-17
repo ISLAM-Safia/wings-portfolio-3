@@ -45,6 +45,7 @@
     --box-color: #fff;
     --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
+    --bg-color :#fdfdfd;
 
     /* --body-font: 'Poppins', sans-serif; */
     --body-font: 'Cairo', sans-serif;
@@ -218,8 +219,9 @@ input {
     bottom: 0;
     left: 0;
     z-index: 10000;
-    background-color: #fff;
+    /* background-color: #fff; */
 }
+
 .logo__img {
     width: 100px;
 }
@@ -258,12 +260,13 @@ input {
 }
 
 .nav__link {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     font-size: var(--small-font-size);
     color: var(--title-color);
-    font-weight: var(--font-medium);
+    font-weight: var(--font-bold);
 }
 
 .nav__link:hover {
@@ -304,15 +307,45 @@ input {
 }
 /* =========== ACTIVE LINK =================== */
 .active-link {
-
     color: var(--skin-color);
 }
+
+
+.nav__item a.active-link::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -.5rem;
+    width: 100%;
+    height: .1rem;
+    background-color: var(--box-color);
+}
+
+
 
 /* =========== CHANGE BACKGROUND COLOR =================== */
 
 .scroll-header {
-    box-shadow: 0 -1px 4px rgb(0, 0, 0 , .15);
+    box-shadow: 0 -1px 4px rgb(0, 0, 0 , .3);
 
+}
+.header.scroll-header .nav__item a {
+    color: var(--text-color)
+}
+
+.header.scroll-header .nav__item a.active-link {
+    color: var(--skin-color);
+}
+
+.header.scroll-header .nav__item a.active-link::before {
+    background: var(--skin-color);
+    opacity: .7;
+}
+
+
+.header.scroll-header  #theme-button{
+    color : var(--text-color);
+    opacity: .9;
 }
 
 /* .sidebar {
@@ -885,7 +918,7 @@ input {
     width: 500px;
     position: relative;
     background-color: var(--box-color);
-    padding: 4.5rem 2.5rem 2.5rem;
+    padding: 2rem 2.5rem 2.5rem;
     border-radius: .5rem;
 }
 
@@ -912,7 +945,7 @@ input {
 .services__model-description {
     font-size: var(--small-font-size);
     padding: 0 1.5rem;
-    margin-bottom: var(--mb-2);
+    margin-bottom: var(--mb-1);
 }
 
 .services__model-services {
