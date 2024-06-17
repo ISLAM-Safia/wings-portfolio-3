@@ -46,37 +46,6 @@ function portfolioItemDetails(portfolioItem){
 }
 
 
-
-
-
-
-
-
-
-
-
-/*=============== SWIPER TESTIMONIAL ===============*/
-
-// let swiper = new Swiper(".testimonials__container", {
-//     spaceBetween: 24,
-//     loop:true,
-//     grabCursor:true,
-//     pagination: {
-//       el: ".swiper-pagination",
-//       clickable: true,
-//     },
-//     breakpoints: {
-//         576: {
-//           slidesPerView: 2,
-//         },
-//         768: {
-//           slidesPerView: 2,
-//           spaceBetween: 48,
-//         },
-
-//       },
-//   }); 
-
 /*=============== INPUT ANIMATION ===============*/
 
 const inputs = document.querySelectorAll(".input");
@@ -99,55 +68,6 @@ inputs.forEach((input) => {
     input.addEventListener('blur' , blurFunc);
 })
 
-
-/*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
-
-// const sections = document.querySelectorAll('section[id]');
-
-// window.addEventListener('scroll' ,navHighlighter )
-
-// function navHighlighter(){
-
-//     let scrollYY = window.scrollY;
-//     // let scrollY = window.offsetHeight;
-
-//     sections.forEach(current => {
-
-//         const sectionHight = current.offsetHeight ;
-//         const sectionTop = current.offsetTop - 50 ;
-//         const  sectionId = current.getAttribute("id");
-
-//         if (scrollYY > sectionTop && scrollYY <= sectionHight + sectionTop ){
-
-//             document.querySelector('.nav__menu a[href*="' + sectionId + '"]').classList.add('active-link')
-
-//         }else {
-
-//             document.querySelector('.nav__menu a[href*="' + sectionId + '"]').classList.remove('active-link')
-
-//         }
-
-//     })
-// }
-// const sections = document.querySelectorAll('section[id]');
-
-// window.addEventListener('scroll', navHighlighter);
-
-// function navHighlighter() {
-//     let scrollYY = window.scrollY;
-
-//     sections.forEach(current => {
-//         const sectionHeight = current.offsetHeight;
-//         const sectionTop = current.offsetTop - 50;
-//         const sectionId = current.getAttribute("id");
-
-//         if (scrollYY > sectionTop && scrollYY < sectionHeight + sectionTop) {
-//             document.querySelector('.nav__menu a[href*="' + sectionId + '"]').classList.add('active-link');
-//         } else {
-//             document.querySelector('.nav__menu a[href*="' + sectionId + '"]').classList.remove('active-link');
-//         }
-//     });
-// }
 
 
 /*===============COUNT ===============*/
@@ -230,7 +150,7 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 const sections = document.querySelectorAll('section[id]')
 
 function scrollActive(){
-    const scrollY = window.pageYOffset
+    const scrollY = window.scrollY || window.pageYOffset;
 
     sections.forEach(current =>{
         const sectionHeight = current.offsetHeight
@@ -307,55 +227,6 @@ themeButton.addEventListener('click', () => {
   header.classList.toggle('sticky', window.scrollY > 100);
 
 
-
-
-
-
-// const sr = ScrollReveal({
-//     origin: 'top',
-//     distance: '30px',
-//     duration: 2000,
-//     reset: true
-// });
-
-// sr.reveal(`.home__data, .home__img,
-//             .about__data, .about__img,
-//             .services__content, .menu__content,
-//             .app__data, .app__img,
-//             .contact__data, .contact__button,
-//             .footer__content`, {
-//     interval: 200
-// })
-
-
-
-// const sr = ScrollReveal({
-//     origin: 'top',
-//     distance: '30px',
-//     duration: 2000,
-//     reset: false  // تعيين إعادة التحريك إلى false
-// });
-
-// sr.reveal(`.home__data, .home__img,
-//             .about__data, .about__img,
-//             .services__content, .menu__content,
-//             .app__data, .app__img,
-//             .contact__data, .contact__button,
-//             .footer__content`, {
-//     interval: 200
-// });
-
-
-
-
-
-
-
-
-
-
-
-
 /*==================== EMAIL JS ====================*/
 
 
@@ -380,28 +251,6 @@ window.onload = function() {
 
 /*=============== SERVICES MODAL ===============*/
 
-// const modalViews = document.querySelectorAll('.services__model'),
-//         modalBtns = document.querySelectorAll('.services__button'),
-//         modalCloses = document.querySelectorAll('.services__model-close')
-
-
-// let modal = function(modalClick){
-//     modalViews[modalClick].classList.add('active-modal')
-// }
-
-// modalBtns.forEach((modelBtn , i) => {
-//     modelBtn.addEventListener('click' , () => {
-//         modal(i)
-//     })
-// })
-
-// modalCloses.forEach((modalClose) => {
-//     modalClose.addEventListener('click' , () => {
-//         modalViews.forEach((modalView) => {
-//             modalView.classList.remove('active-modal')
-//         })
-//     })
-// })
 
     document.addEventListener('DOMContentLoaded', function() {
         const modalViews = document.querySelectorAll('.services__model'),
