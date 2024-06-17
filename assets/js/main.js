@@ -348,24 +348,7 @@ themeButton.addEventListener('click', () => {
 
 
 
-const sr = ScrollReveal({
-    origin: 'top',
-    distance: '30px',
-    duration: 1000, // تقليل مدة التحريك
-    reset: false   // عدم إعادة التحريك عند التمرير
-});
 
-// كشف العناصر الأخرى
-sr.reveal(`.home__data, .home__img,
-            .about__data, .about__img,
-            .menu__content,
-            .app__data, .app__img,
-            .contact__data, .contact__button,
-            .footer__content`, {
-    interval: 200
-});
-
-// يمكن إضافة كشف للخدمات بشكل منفصل مع إعدادات مختلفة إذا لزم الأمر
 
 
 
@@ -379,9 +362,9 @@ sr.reveal(`.home__data, .home__img,
 window.onload = function() {
     document.getElementById('contact-form').addEventListener('submit', function(event) {
         event.preventDefault();
-        emailjs.sendForm('service_k4sjq8n', 'template_wrznn8x', this, 'B0_0T_RpAgbk2S7Qp')
+        emailjs.sendForm('service_blo1bjg', 'template_frl9sza', this, 'lOXXClaBggsv1jD6w')
             .then(() => {
-                document.getElementById('contact-msg').textContent = 'Message sent successfully';
+                document.getElementById('contact-msg').textContent = 'Message sent successfully !';
                 setTimeout(() => {
                     document.getElementById('contact-msg').textContent = '';
                 }, 5000);
@@ -443,4 +426,78 @@ window.onload = function() {
             });
         });
     });
+
+
+
+    
+// const sr = ScrollReveal({
+//     origin: 'top',
+//     distance: '30px',
+//     duration: 1000, // تقليل مدة التحريك
+//     reset: false   // عدم إعادة التحريك عند التمرير
+// });
+
+// // كشف العناصر الأخرى
+// sr.reveal(`.home__data, .home__img,
+//             .about__data, .about__img,
+//             .menu__content,
+//             .app__data, .app__img,
+//             .contact__data, .contact__button,
+//             .footer__content`, {
+//     interval: 200
+// });
+
+
+
+
+const myslide = document.querySelectorAll('.myslide'),
+	  dot = document.querySelectorAll('.dot');
+let counter = 1;
+slidefun(counter);
+
+let timer = setInterval(autoSlide, 8000);
+function autoSlide() {
+	counter += 1;
+	slidefun(counter);
+}
+function plusSlides(n) {
+	counter += n;
+	slidefun(counter);
+	resetTimer();
+}
+function currentSlide(n) {
+	counter = n;
+	slidefun(counter);
+	resetTimer();
+}
+function resetTimer() {
+	clearInterval(timer);
+	timer = setInterval(autoSlide, 8000);
+}
+
+function slidefun(n) {
+	
+	let i;
+	for(i = 0;i<myslide.length;i++){
+		myslide[i].style.display = "none";
+	}
+	for(i = 0;i<dot.length;i++) {
+		dot[i].className = dot[i].className.replace(' active', '');
+	}
+	if(n > myslide.length){
+	   counter = 1;
+	   }
+	if(n < 1){
+	   counter = myslide.length;
+	   }
+	myslide[counter - 1].style.display = "block";
+	dot[counter - 1].className += " active";
+}
+
+
+
+
+
+
+
 
