@@ -1261,7 +1261,9 @@ textarea.input {
     color: #fff;
 }
 
-
+.footer__copy a {
+    color: #fff;
+}
 .footer__title ,
 .footer__subtitle,
 .footer__link,
