@@ -10,7 +10,7 @@
     <!-- ==================== BOXICONS ======================== -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- ==================== SWIPER CSS ======================== -->
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!-- <link rel="stylesheet" href="assets/css/swiper-bundle.min.css"> -->
     <!--==================== MAIN CSS ========================  -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -19,7 +19,7 @@
     <header class="header " id="header" style="direction: ltr;">
         <nav class="nav container">
             <!-- <a href="" class="nav__logo">wings</a> -->
-             <img src="assets/images/logo.png" alt="" class="logo__img">
+             <img src="assets/images/logooooo.png" alt="" class="logo__img">
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list grid">
                     <li class="nav__item">
@@ -33,13 +33,13 @@
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="#work" class="nav__link">
-                            <i class="uil uil-scenery nav__icon"></i>اعمالنا
+                        <a href="#services" class="nav__link">
+                            <i class="uil uil-briefcase nav__icon"></i>الخدمات
                         </a>
                     </li>
                     <li class="nav__item">
-                        <a href="#services" class="nav__link">
-                            <i class="uil uil-briefcase nav__icon"></i>الخدمات
+                        <a href="#work" class="nav__link">
+                            <i class="uil uil-scenery nav__icon"></i>اعمالنا
                         </a>
                     </li>
                     <li class="nav__item">
@@ -99,6 +99,7 @@
 
             <div class="slider">
                 <div class="myslide fade">
+                    <div class="overlay"></div>
                     <div class="txt">
                         <h1 class="home__title"> وكالة الاجنحة الرقمية</h1>
                         <h3 class="home__subtitle">وكالة سعودية تستعمل أدواتها بشغف للتفرُّد والتميُّز في أعمالها</h3>
@@ -108,24 +109,30 @@
                 </div>
                 
                 <div class="myslide fade">
+                    <div class="overlay"></div>
                     <div class="txt">
                         <h1 class="home__title"> وكالة الاجنحة الرقمية</h1>
                         <h3 class="home__subtitle">وكالة سعودية تستعمل أدواتها بشغف للتفرُّد والتميُّز في أعمالها</h3>
                         <p>التسويق الرقمي - ادارة مواقع التواصل الاجتماعي - تحسين حركة المرور - تحليل الحسابات وقياس الاداء</p>
                     </div>
-                    <img src="assets/images/img2.jpg" style="width: 100%; height: 100%;">
+                    <img src="assets/images/pexels-pavel-danilyuk-5496464.jpg" style="width: 100%; height: 100%;">
                 </div>
                 
                 <div class="myslide fade">
+                    <div class="overlay"></div>
                     <div class="txt">
                         <h1 class="home__title"> وكالة الاجنحة الرقمية</h1>
                         <h3 class="home__subtitle">وكالة سعودية تستعمل أدواتها بشغف للتفرُّد والتميُّز في أعمالها</h3>
-                        <p>البحوث التسويقية - بناء الخطط التسويقية - دراسة تجربة العميل</p>
+                        <p> - البحوث التسويقية - بناء الخطط التسويقية - دراسة تجربة العميل 
+                            -
+                            استراتيجيات التواصل
+                        </p>
                     </div>
-                    <img src="assets/images/img3.jpg" style="width: 100%; height: 100%;">
+                    <img src="assets/images/img5.jpg" style="width: 100%; height: 100%;">
                 </div>
                 
                 <div class="myslide fade">
+                    <div class="overlay"></div>
                     <div class="txt">
                         <h1 class="home__title"> وكالة الاجنحة الرقمية</h1>
                         <h3 class="home__subtitle">وكالة سعودية تستعمل أدواتها بشغف للتفرُّد والتميُّز في أعمالها</h3>
@@ -182,205 +189,14 @@
                 <div class="about__box">
                     <i class="about__icon uil uil-headphones"></i>
                     <h3 class="about__title">الدعم</h3>
-                    <span class="about__subtitle">متصل 15/15</span>
+                    <span class="about__subtitle">متصل 24/24</span>
                 </div>
             </div>
             
 
         </div>
     </section>
-    <!-- =============== WORK  ================ -->
-    <section class="work section" id="work">
-        <h2  class="section__title">معرض الاعمال</h2>
-        <div class="work__filters">
-            <span class="work__item active-work"  data-filter="all">All</span>
-            <span class="work__item"  data-filter=".web" > نصميم وبرمجة المواقع </span>
-            <span class="work__item"  data-filter=".app">التطبيقات</span>
-            <span class="work__item"  data-filter=".montage">المونتاج</span>
-            <span class="work__item"  data-filter=".design">التصميم</span>
-        </div>   
-
-        <div class="work__container container grid">
-            <div class="work__card mix web">
-                <img src="assets/images/Capture.PNG" alt="UIUX-1" class="work__img">
-                <h3 class="work__title">نصميم وبرمجة المواقع</h3>
-                <span class="work__button">عرض
-                    <i class="uil uil-arrow-left work__button-icon"></i>
-                </span>
-
-                <div class="portfolio__item-details">
-                    <h3 class="details__title">The best guide to perform your service</h3>
-                    <ul class="details__info">
-                        <li>الانشاء - <span> May 2nd 2023</span></li>
-                        <li>Technologies - <span>XD</span></li>
-
-                    </ul>
-                </div>
-            </div>
-
-            <div class="work__card mix web">
-                <img src="assets/images/Capture2.PNG" alt="UIUX-2" class="work__img">
-                <h3 class="work__title">نصميم وبرمجة المواقع</h3>
-                <span class="work__button">عرض
-                    <i class="uil uil-arrow-left work__button-icon"></i>
-                </span>
-
-
-                <div class="portfolio__item-details">
-                    <h3 class="details__title">Best Smartly PDF </h3>
-                    <ul class="details__info">
-                        <li>الانشاء - <span> August 20th 2022</span></li>
-                        <li>Technologies - <span>XD</span></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="work__card mix web">
-                <img src="assets/images/Capture6.PNG" alt="UIUX-3" class="work__img">
-                <h3 class="work__title">نصميم وبرمجة المواقع</h3>
-                <span class="work__button">عرض
-                    <i class="uil uil-arrow-left work__button-icon"></i>
-                </span>
-
-
-                <div class="portfolio__item-details">
-                    <h3 class="details__title">AAMEN APP</h3>
-                    <ul class="details__info">
-                        <li>الانشاء - <span> September 8th 2022</span></li>
-                        <li>Technologies - <span>XD / FIGMA</span></li>
-                    </ul>
-                </div>
-            </div>
-
-
-            <div class="work__card mix app" >
-                <img src="assets/images/work-5.webp" alt="app-1" class="work__img">
-                <h3 class="work__title">التطبيقات</h3>
-                <span class="work__button">عرض
-                    <i class="uil uil-arrow-left work__button-icon"></i>
-                </span>
-
-                <div class="portfolio__item-details">
-                    <h3 class="details__title">Mobile app landing design & app maintain.</h3>
-                    <ul class="details__info">
-                        <li>Created - <span>4 dec 2022</span></li>
-                        <li>Technologies - <span>Flutter Framework</span></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="work__card mix app" >
-                <img src="assets/images/work-6.webp" alt="app-2" class="work__img">
-                <h3 class="work__title">التطبيقات</h3>
-                <span class="work__button">عرض
-                    <i class="uil uil-arrow-left work__button-icon"></i>
-                </span>
-
-                <div class="portfolio__item-details">
-                    <h3 class="details__title">Mobile app landing design & app maintain.</h3>
-                    <ul class="details__info">
-                        <li>Created - <span>7 Nov 2022</span></li>
-                        <li>Technologies - <span>Flutter Framework</span></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="work__card mix app" >
-                <img src="assets/images/work-2.webp" alt="app-3" class="work__img">
-                <h3 class="work__title">التطبيقات</h3>
-                <span class="work__button">عرض
-                    <i class="uil uil-arrow-left work__button-icon"></i>
-                </span>
-
-                <div class="portfolio__item-details">
-                    <h3 class="details__title">Mobile app landing design & app maintain.</h3>
-                    <ul class="details__info">
-                        <li>Created - <span>10 May 2022</span></li>
-                        <li>Technologies - <span>Flutter Framework</span></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="work__card mix montage" >
-                <video class="work__img-v" autoplay loop muted>
-                    <source src="assets/images/video-1--.mp4" type="video/mp4">
-                    <source src="assets/images/video-1--.mp4" type="video/webm">
-                    <source src="assets/images/video-1--.mp4" type="video/ogg">
-                    Your browser does not support the video tag.
-                </video>
-                
-            </div>
-
-            <div class="work__card mix montage" >
-                <video class="work__img-v" autoplay loop muted>
-                    <source src="assets/images/video-2-.mp4" type="video/mp4">
-                    <source src="assets/images/video-2-.webm" type="video/webm">
-                    <source src="assets/images/video-2-.ogg" type="video/ogg">
-                    Your browser does not support the video tag.
-                </video>
-                
-            </div>
-
-            <div class="work__card mix montage" >
-                <video class="work__img-v" autoplay loop muted>
-                    <source src="assets/images/video-3--.mp4" type="video/mp4">
-                    <source src="assets/images/video-3--.webm" type="video/webm">
-                    <source src="assets/images/video-3--.ogg" type="video/ogg">
-                    Your browser does not support the video tag.
-                </video>
-                
-            </div>
-
-            <div class="work__card mix design" >
-                <img src="assets/images/workdesign11.jpg" alt="design-1" class="work__img design-img" >
-                <img src="assets/images/workdesign22.jpg" alt="design-2" class="work__img design-img" >
-
-            </div>
-
-            <div class="work__card mix design" >
-                <img src="assets/images/workdesign33.jpg" alt="design-3" class="work__img design-img" >
-                <img src="assets/images/workdesign44.jpg" alt="design-4" class="work__img design-img" >
-
-            </div>
-
-            <div class="work__card mix design" >
-                <img src="assets/images/workdesign55.jpg" alt="design-5" class="work__img design-img" >
-                <img src="assets/images/workdesign66.jpg" alt="design-6" class="work__img design-img" >
-
-            </div>
-            <div class="work__card mix design" >
-                <img src="assets/images/workdesign77.jpg" alt="design-7" class="work__img design-img" >
-                <img src="assets/images/workdesign88.jpg" alt="design-8" class="work__img design-img" >
-
-            </div>
-
-
-        </div>
-    </section>
-
-    <!-- Portfolio Popup -->
-    <div class="portfolio__popup">
-        <div class="portfolio__popup-inner">
-            <div class="portfolio__popup-content grid">
-                <span class="portfolio__popup-close"><i class="uil uil-times"></i></span>
-                <div class="pp__thumbnail">
-                    <img  class="portfolio__popup-img" src="assets/images/work-2.webp" alt="">
-                </div>
-
-                <div class="portfolio__popup-info">
-                    <div class="portfolio__popup-subtitle"> - <span>Design</span></div>
-                    <div class="portfolio__popup-body">
-                            <h3 class="details__title">The services provide for design</h3>
-                            <ul class="details__info">
-                                <li>Created - <span>4 dec 2022</span></li>
-                                <li>Technologies - <span>html css js</span></li>
-                                <li>View - <span><a href="#">www.portfolio.com</a></span></li>
-                            </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
+    
     <!-- ===============  Services =================== -->
     <section class="services section" id="services">
         <h2  class="section__title">ماذا نقدم!</h2>
@@ -560,6 +376,199 @@
             </div>
         </div>
     </section>
+    <!-- =============== WORK  ================ -->
+    <section class="work section" id="work">
+        <h2  class="section__title">معرض الاعمال</h2>
+        <div class="work__filters">
+            <span class="work__item active-work"  data-filter="all">All</span>
+            <span class="work__item"  data-filter=".web" > نصميم وبرمجة المواقع </span>
+            <span class="work__item"  data-filter=".app">التطبيقات</span>
+            <span class="work__item"  data-filter=".montage">المونتاج</span>
+            <span class="work__item"  data-filter=".design">التصميم</span>
+        </div>   
+
+        <div class="work__container container grid">
+            <div class="work__card mix web">
+                <img src="assets/images/Capture.PNG" alt="UIUX-1" class="work__img">
+                <h3 class="work__title">نصميم وبرمجة المواقع</h3>
+                <span class="work__button">عرض
+                    <i class="uil uil-arrow-left work__button-icon"></i>
+                </span>
+
+                <div class="portfolio__item-details">
+                    <h3 class="details__title">The best guide to perform your service</h3>
+                    <ul class="details__info">
+                        <li>الانشاء - <span> May 2nd 2023</span></li>
+                        <li>Technologies - <span>XD</span></li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="work__card mix web">
+                <img src="assets/images/Capture2.PNG" alt="UIUX-2" class="work__img">
+                <h3 class="work__title">نصميم وبرمجة المواقع</h3>
+                <span class="work__button">عرض
+                    <i class="uil uil-arrow-left work__button-icon"></i>
+                </span>
+
+
+                <div class="portfolio__item-details">
+                    <h3 class="details__title">Best Smartly PDF </h3>
+                    <ul class="details__info">
+                        <li>الانشاء - <span> August 20th 2022</span></li>
+                        <li>Technologies - <span>XD</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="work__card mix web">
+                <img src="assets/images/Capture6.PNG" alt="UIUX-3" class="work__img">
+                <h3 class="work__title">نصميم وبرمجة المواقع</h3>
+                <span class="work__button">عرض
+                    <i class="uil uil-arrow-left work__button-icon"></i>
+                </span>
+
+
+                <div class="portfolio__item-details">
+                    <h3 class="details__title">AAMEN APP</h3>
+                    <ul class="details__info">
+                        <li>الانشاء - <span> September 8th 2022</span></li>
+                        <li>Technologies - <span>XD / FIGMA</span></li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="work__card mix app" >
+                <img src="assets/images/work-5.webp" alt="app-1" class="work__img">
+                <h3 class="work__title">التطبيقات</h3>
+                <span class="work__button">عرض
+                    <i class="uil uil-arrow-left work__button-icon"></i>
+                </span>
+
+                <div class="portfolio__item-details">
+                    <h3 class="details__title">Mobile app landing design & app maintain.</h3>
+                    <ul class="details__info">
+                        <li>Created - <span>4 dec 2022</span></li>
+                        <li>Technologies - <span>Flutter Framework</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="work__card mix app" >
+                <img src="assets/images/work-6.webp" alt="app-2" class="work__img">
+                <h3 class="work__title">التطبيقات</h3>
+                <span class="work__button">عرض
+                    <i class="uil uil-arrow-left work__button-icon"></i>
+                </span>
+
+                <div class="portfolio__item-details">
+                    <h3 class="details__title">Mobile app landing design & app maintain.</h3>
+                    <ul class="details__info">
+                        <li>Created - <span>7 Nov 2022</span></li>
+                        <li>Technologies - <span>Flutter Framework</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="work__card mix app" >
+                <img src="assets/images/work-2.webp" alt="app-3" class="work__img">
+                <h3 class="work__title">التطبيقات</h3>
+                <span class="work__button">عرض
+                    <i class="uil uil-arrow-left work__button-icon"></i>
+                </span>
+
+                <div class="portfolio__item-details">
+                    <h3 class="details__title">Mobile app landing design & app maintain.</h3>
+                    <ul class="details__info">
+                        <li>Created - <span>10 May 2022</span></li>
+                        <li>Technologies - <span>Flutter Framework</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            
+            <div class="work__card mix montage" >
+                <video class="work__img-v" autoplay loop muted>
+                    <source src="assets/images/montage-1-.mp4" type="video/mp4">
+                    <source src="assets/images/montage11-.mp4" type="video/webm">
+                    <source src="assets/images/montage11-.mp4" type="video/ogg">
+                    Your browser does not support the video tag.
+                </video>
+                
+            </div>
+
+            <div class="work__card mix montage" >
+                <video class="work__img-v" autoplay loop muted>
+                    <source src="assets/images/video-1--.mp4" type="video/mp4">
+                    <source src="assets/images/video-1--.mp4" type="video/webm">
+                    <source src="assets/images/video-1--.mp4" type="video/ogg">
+                    Your browser does not support the video tag.
+                </video>
+                
+            </div>
+
+            <div class="work__card mix montage" >
+                <video class="work__img-v" autoplay loop muted>
+                    <source src="assets/images/video-2-.mp4" type="video/mp4">
+                    <source src="assets/images/video-2-.webm" type="video/webm">
+                    <source src="assets/images/video-2-.ogg" type="video/ogg">
+                    Your browser does not support the video tag.
+                </video>
+                
+            </div>
+
+            <div class="work__card mix design" >
+                <img src="assets/images/workdesign11.jpg" alt="design-1" class="work__img design-img" >
+                <img src="assets/images/workdesign22.jpg" alt="design-2" class="work__img design-img" >
+
+            </div>
+
+            <div class="work__card mix design" >
+                <img src="assets/images/workdesign33.jpg" alt="design-3" class="work__img design-img" >
+                <img src="assets/images/workdesign44.jpg" alt="design-4" class="work__img design-img" >
+
+            </div>
+
+            <div class="work__card mix design" >
+                <img src="assets/images/workdesign55.jpg" alt="design-5" class="work__img design-img" >
+                <img src="assets/images/workdesign66.jpg" alt="design-6" class="work__img design-img" >
+
+            </div>
+            <div class="work__card mix design" >
+                <img src="assets/images/workdesign77.jpg" alt="design-7" class="work__img design-img" >
+                <img src="assets/images/workdesign88.jpg" alt="design-8" class="work__img design-img" >
+
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- Portfolio Popup -->
+    <div class="portfolio__popup">
+        <div class="portfolio__popup-inner">
+            <div class="portfolio__popup-content grid">
+                <span class="portfolio__popup-close"><i class="uil uil-times"></i></span>
+                <div class="pp__thumbnail">
+                    <img  class="portfolio__popup-img" src="assets/images/work-2.webp" alt="">
+                </div>
+
+                <div class="portfolio__popup-info">
+                    <div class="portfolio__popup-subtitle"> - <span>Design</span></div>
+                    <div class="portfolio__popup-body">
+                            <h3 class="details__title">The services provide for design</h3>
+                            <ul class="details__info">
+                                <li>Created - <span>4 dec 2022</span></li>
+                                <li>Technologies - <span>html css js</span></li>
+                                <li>View - <span><a href="#">www.portfolio.com</a></span></li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <section class=" section">
 
@@ -567,13 +576,11 @@
         <div class="img-section__container container grid">
             <img src="assets/images/img-section-new.jpg" alt="About Img" class="sec__img-dark">
             <div class="img__data-section">
-                <h3 class="img__heading-sec">بالشراكة مع</h3>
-                <p class="img__description-sec">«لكـن يجـب أن أشرح لـك كيـف ولـدت كل هـذه الفكـرة الخاطئـة المتمثلـة
-                    ً فـي إدانـة الـسرور ومـدح الألـم ، وسـأقدم لـك وصف ً ـا كامـلا للنظـام ، وأشرح
-                    التعاليـم الفعليـة للمستكشـف العظيـم للحقيقـة ، البانـي البـارع. السـعادة
-                    البشريــة. لا أحــد يرفــض أو يكــره أو يتجنــب المتعــة نفســها ، لأنهــا متعــة ،
-                    ولكـن لأن أولئـك الذيـن لا يعرفـون كيفيـة السـعي وراء المتعـة يواجهـون
-                    عواقب مؤلمة للغاية  </p>
+                <h3 class="img__heading-sec">شراكة  استراتيجية</h3>
+                <p class="img__description-sec">
+                    سعيًا منا لتقديم خدمات متميزة، نتعاون مع استوديو AF1 production في مجال الإنتاج الرقمي، لنبتكر معًا حلولًا فريدة تعزز من الحضور الرقمي لعملائنا. هذا التعاون يسهم في زيادة تفاعل الجمهور مع العلامات التجارية وتحقيق تأثير أكبر والوصول الأمثل للجمهور المستهدف.
+
+                </p> 
             </div>
         </div>
     </div>
@@ -691,7 +698,7 @@
         <div class="footer__bg">
             <div class="footer__container container grid">
                 <div class="footer-logo">
-                    <img src="assets/images/logo.png" alt="">
+                    <img src="assets/images/logooooo.png" alt="">
                 </div>
 
                 <ul class="footer__links">
@@ -731,7 +738,7 @@
 
     <!-- =============== SCROLL UP ================ -->
              <!--========== SCROLL REVEAL ==========-->
-             <script src="https://unpkg.com/scrollreveal"></script>
+             <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
     <!-- =============== MIXITUP FILTER ================ -->
     <script src="assets/js/mixitup.min.js" defer></script>
     <!-- =============== SWIPER JS ================ -->

@@ -88,6 +88,8 @@ body.dark-theme {
 .nav__btns {
     display: flex;
     align-items: center;
+    color: var(--title-color);
+
 }
 
 .change-theme {
@@ -95,7 +97,7 @@ body.dark-theme {
     color: var(--title-color);
     margin-right: var(--mb-1);
     cursor: pointer;
-    color: #fff;
+    color: var(--title-color);
 }
 
 .change-theme:hover {
@@ -414,13 +416,22 @@ input {
 	position: relative;
 	width: 100%;
 	background: #2c3e50; 
+    /* background: #2c3e50 url('./images/img1.jpg') center/cover no-repeat; */
 }
 .myslide{
-	height: 655px;
+	height: 100vh;
 	display: none;
 	overflow: hidden;
 }
-
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* 50% تعتيم */
+    z-index: 1;
+}
 .prev, .next{
 	position: absolute;
 	top: 50%;
@@ -431,6 +442,7 @@ input {
 	color: #fff;
 	transition: 0.1s;
 	user-select: none;
+    z-index: 10;
 }
 .prev:hover, .next:hover{
 	color: var(--skin-color); 
@@ -447,6 +459,7 @@ input {
 	transform: translate(-50%);
 	bottom: 20px;
 	cursor: pointer;
+    z-index: 10;
 }
 .dot{
 	display: inline-block;
@@ -456,6 +469,7 @@ input {
 	border-radius: 50%;
 	margin: 0 10px;
 	cursor: pointer;
+    z-index: 10;
 }
 
 .active, .dot:hover{
@@ -482,7 +496,7 @@ input {
 .txt{
 	position: absolute;
 	color: #fff;
-	letter-spacing: 2px;
+	letter-spacing: 1px;
 	line-height: 35px;
 	top: 40%;
 	left: 15%;
@@ -496,20 +510,21 @@ input {
 }
 
 @-webkit-keyframes posi {
-  from {left: 25%;}
-  to {left: 15%;}
+  from {right: 25%;}
+  to {right: 15%;}
 }
 
 
 @keyframes posi {
-  from {left: 25%;}
-  to {left: 15%;}
+  from {right: 20%;}
+  to {right: 15%;}
 }
 
 
 .txt p{
 	font-weight: bold;
 	font-size: 20px;
+    text-align: center;
 }
 
 .slider img{
@@ -532,14 +547,14 @@ input {
 }
 
 @media screen and (max-width: 800px){
-	.myslide{
+	/* .myslide{
 		height: 500px;
-	}
+	} */
     .slider {
         margin-top: -2rem;
     }
 	.txt{
-		letter-spacing: 2px;
+		letter-spacing: 1px;
 		line-height: 25px;
 		top: 50%;
 		left: 48%;
@@ -549,6 +564,7 @@ input {
 		-webkit-animation-duration: 2s;
 		animation-name: posi2;
 		animation-duration: 2s;
+        text-align: center;
 	}
 	@-webkit-keyframes posi2 {
 	    from {top: 35%;}
@@ -880,7 +896,7 @@ input {
 /*===== Services Section =====*/
 
 .services__container {
-    grid-template-columns: repeat(4, 250px);
+    grid-template-columns: repeat(4, 220px);
     justify-content: center;
     column-gap: 1.8rem;
 }
@@ -1226,11 +1242,11 @@ textarea.input {
 
 .footer__bg {
     background-color: var(--skin-color);
-    padding: 3rem 0 1.8rem ;
+    padding: 4rem 1.5rem 1.8rem ;
 }
 
 .footer-logo {
-    margin-top: -3rem;
+    margin-top: -1rem;
 }
 .footer-logo img{
     width: 130px;
@@ -1334,6 +1350,14 @@ textarea.input {
         margin-right: auto;
         margin-left: auto;
     }
+    .home__title ,
+    .home__subtitle {
+        text-align: center;
+    }
+
+    /* .about {
+        margin-top: 4rem;
+    } */
 
 }
 
@@ -1361,7 +1385,7 @@ textarea.input {
 @media screen and (max-width: 1180px) {
 
     .img-section__container { 
-        padding:  5rem 4rem;
+        padding:  3rem 4rem;
 
     }
 
@@ -1370,9 +1394,6 @@ textarea.input {
         font-size: var(--h3-font-size);
     }
 
-    .img__description-sec {
-
-    } 
     
 
 
@@ -1390,15 +1411,16 @@ textarea.input {
     .footer__container {
         padding: 0;
     }
-	.myslide{
-		height: 550px;
-	}
+
     .prev , .next {
         font-size: 1.8rem;
     }
     .dot{
         width: 10px;
         height: 10px;
+    }
+    .about {
+        padding:  4rem 2rem;
     }
     .about__container {
         grid-template-columns: 1fr;
@@ -1431,7 +1453,7 @@ textarea.input {
     }
 
     .about__description {
-        padding:  0 4rem;
+        padding:  0 2rem;
         text-align: center;
     }
 
@@ -1509,7 +1531,7 @@ textarea.input {
     }
 
     .footer__copy{
-        margin-bottom: var(--mb-2);
+        margin-bottom: var(--mb-1);
     }
 }
 
@@ -1557,12 +1579,19 @@ textarea.input {
 
 @media screen and (max-width: 768px) {
 
+    .header {
+        background-color: var(--body-color);
+    }
 
     body {
         overflow-x: hidden;
     }
     .slider img{
         object-fit: cover;
+    }
+    .home__title ,
+    .home__subtitle {
+        text-align: center;
     }
 
     .home__subtitle {
@@ -1575,7 +1604,7 @@ textarea.input {
     }
 
     .about {
-        padding:   0;
+        padding-top: 2rem;
     }
     .about__img {
         width: 300px;
@@ -1584,18 +1613,32 @@ textarea.input {
     .prev , .next {
         font-size: 2rem;
     }
+
+    .myslide {
+        height: 85vh;
+    }
+    .home{
+        height: 85vh;
+
+    }
+    .txt{
+        right: -100px;
+    }
+
     .about__info {
         justify-content: center;
         grid-template-columns: repeat(2,1fr);
         gap: 1.5rem;
-
+    }
+    .section__title {
+        margin-bottom: 2rem;
     }
 
     .home__social {
         left: -2rem;
     }
     .img-section__container {
-        padding: 4rem 3rem;
+        padding: 3rem 3rem;
     }
     .sec__img-dark {
         width: 300px;
@@ -1680,11 +1723,11 @@ textarea.input {
     }
 
     .footer__bg {
-        padding: 2rem 0 3rem ;
+        padding: 2rem 0 1rem ;
     }
 
     .footer__copy {
-        margin-top: var(--mb-2);
+        margin-top: var(--mb-1);
     }
     .portfolio__popup {
         padding-top: 4rem;
@@ -1724,6 +1767,10 @@ textarea.input {
     }
 
 
+    .section {
+        padding: 1.8rem 0 2rem
+    }
+
     .home__container {
         row-gap: 2rem;
     }
@@ -1732,33 +1779,45 @@ textarea.input {
         background-image: none;
         height: initial;
         align-items: initial;
-        padding: 2rem 0 2rem;
+        padding: 2rem 0 0;
+    }
+
+    .myslide {
+        height: 75vh;
     }
 
 
-
-    .home__data {
+    /* .home__data {
         text-align: center;
         padding: 0;
+    } */
+    .txt {
+        text-align: center;
+        right: -120px;
+    }
+    .home__title ,
+    .home__subtitle {
+        text-align: center;
     }
     .home__subtitle {
         max-width: none;
+
     }
-    .home__img {
+    /* .home__img {
         display: block;
         width: 250px;
         justify-self: center;
-    }
+    } */
 
-    .home__social {
+    /* .home__social {
         top: 8rem;
         left: initial;
         right: 1rem;
         flex-direction: column;
         row-gap: 3rem;
-    }
+    } */
 
-    .home__social-follow {
+    /* .home__social-follow {
         font-size: var(--smaller-font-size);
         transform: rotate(90deg);
     } 
@@ -1770,9 +1829,9 @@ textarea.input {
 
     .home__social-link {
         font-size: var(--normal-font-size);
-    }
+    } */
     .about {
-        padding: 4rem 2rem 0;
+        padding: 1rem 2rem 0;
     }
     .about__description {
         margin-bottom: 1.2rem;
@@ -1868,9 +1927,6 @@ textarea.input {
     .footer__links , .footer__socials {
         justify-self: center;
     }
-    .section {
-        padding: 3rem 0 2rem
-    }
 
     .contact__container  {
         grid-template-columns: 320px;
@@ -1880,11 +1936,11 @@ textarea.input {
 
 
 }
-@media screen and (max-width: 434px) {
+/* @media screen and (max-width: 434px) {
     .home__social {
         right: -1.5rem;
     }
-}
+} */
 
 /* For Small Devices */
 @media screen and (max-width: 350px) {
@@ -1896,6 +1952,12 @@ textarea.input {
         margin-left: var(--mb-1);
         margin-right: var(--mb-1);
     }
+    /* .myslide {
+        height: 600px;
+    } */
+    .prev , .next {
+        display: none;
+    }
 
     .nav__menu {
         padding: 2rem .25rem 4rem ;
@@ -1904,10 +1966,14 @@ textarea.input {
     .nav__list {
         column-gap: 0;
     }
-    .home__img {
+    /* .home__img {
         width: 200px;
-    }
+    } */
 
+    .home__title ,
+    .home__subtitle {
+        text-align: center;
+    }
     .home__title {
         font-size: var(--h3-font-size);
     }
@@ -1916,14 +1982,14 @@ textarea.input {
         color: var(--skin-color);
         line-height: 24px;
     }
-    .home__social {
+    .about {
+        padding-top: 1.2rem;
+    }
+    /* .home__social {
         right: 0;
         top: 5rem;
-    }
+    } */
 
-    .txt {
-    text-align: center;
-    }
     .slider-des {
         line-height: 20px;
     }
@@ -1935,8 +2001,6 @@ textarea.input {
 
     .contact__container,
     .work__container ,
-    .qualification__container ,
-    .skills__container ,
     .services__container  {
         grid-template-columns: 1fr;
     }

@@ -191,34 +191,82 @@ window.addEventListener('scroll', scrollUp)
 
 
 /*==================== DARK LIGHT THEME ====================*/ 
-const themeButton = document.getElementById('theme-button')
-const darkTheme = 'dark-theme'
-const iconTheme = 'uil-sun'
+// const themeButton = document.getElementById('theme-button')
+// const darkTheme = 'dark-theme'
+// const iconTheme = 'uil-sun'
 
-// Previously selected topic (if user selected)
-const selectedTheme = localStorage.getItem('selected-theme')
-const selectedIcon = localStorage.getItem('selected-icon')
+// // Previously selected topic (if user selected)
+// const selectedTheme = localStorage.getItem('selected-theme')
+// const selectedIcon = localStorage.getItem('selected-icon')
 
-// We obtain the current theme that the interface has by validating the dark-theme class
-const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
-const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'uil-moon' : 'uil-sun'
+// // We obtain the current theme that the interface has by validating the dark-theme class
+// const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
+// const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'uil-moon' : 'uil-sun'
 
-// We validate if the user previously chose a topic
-if (selectedTheme) {
-  // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
-  document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
-  themeButton.classList[selectedIcon === 'uil-moon' ? 'add' : 'remove'](iconTheme)
-}
+// // We validate if the user previously chose a topic
+// if (selectedTheme) {
+//   // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
+//   document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
+//   themeButton.classList[selectedIcon === 'uil-moon' ? 'add' : 'remove'](iconTheme)
+// }
 
-// Activate / deactivate the theme manually with the button
-themeButton.addEventListener('click', () => {
-    // Add or remove the dark / icon theme
-    document.body.classList.toggle(darkTheme)
-    themeButton.classList.toggle(iconTheme)
-    // We save the theme and the current icon that the user chose
-    localStorage.setItem('selected-theme', getCurrentTheme())
-    localStorage.setItem('selected-icon', getCurrentIcon())
-})
+// // Activate / deactivate the theme manually with the button
+// themeButton.addEventListener('click', () => {
+//     // Add or remove the dark / icon theme
+//     document.body.classList.toggle(darkTheme)
+//     themeButton.classList.toggle(iconTheme)
+//     // We save the theme and the current icon that the user chose
+//     localStorage.setItem('selected-theme', getCurrentTheme())
+//     localStorage.setItem('selected-icon', getCurrentIcon())
+// })
+
+// ***********************************
+// const themeButton = document.getElementById('theme-button');
+// const darkTheme = 'dark-theme';
+// const iconTheme = 'uil-sun';
+
+// const selectedTheme = localStorage.getItem('selected-theme');
+// const selectedIcon = localStorage.getItem('selected-icon');
+
+// const logoImg = document.querySelector('.logo__img');
+
+// // Function to change logo based on theme
+// const setLogoForTheme = (theme) => {
+//     if (theme === 'dark') {
+//         // Keep the logo as it is for dark theme
+//     } else {
+//         // Change logo for light theme
+//         logoImg.src = 'assets/images/logo.png'; // مسار الشعار الأصلي هنا
+//     }
+// };
+
+// // Function to get current theme
+// const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light';
+
+// // Toggle dark mode with button click
+// themeButton.addEventListener('click', () => {
+//     // Toggle dark mode
+//     document.body.classList.toggle(darkTheme);
+    
+//     // Set logo based on current theme after toggling
+//     setLogoForTheme(getCurrentTheme());
+    
+//     // Save theme in localStorage
+//     localStorage.setItem('selected-theme', getCurrentTheme());
+// });
+
+// // Check previously selected theme and set logo accordingly
+// if (selectedTheme) {
+//     document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme);
+//     setLogoForTheme(selectedTheme);
+// }
+
+
+
+
+
+
+
 
 
   // /* =============== sticky navbar=========================== */
@@ -346,7 +394,152 @@ function slidefun(n) {
 
 
 
+// window.addEventListener('scroll', function() {
+//     var header = document.querySelector('.header');
+//     var logo = document.querySelector('.header .nav img');
+    
+//     if (window.scrollY > 50) {
+//         header.classList.add('scroll-header');
+//         logo.src = 'assets/images/logo.png'; // ضع مسار صورة الشعار الجديدة هنا
+//     } else {
+//         header.classList.remove('scroll-header');
+//         logo.src = 'assets/images/logooooo.png'; // ضع مسار صورة الشعار الأصلية هنا
+//     }
+// });
 
 
 
+// window.addEventListener('scroll', function() {
+//     var header = document.querySelector('.header');
+//     var logo = document.querySelector('.header .nav img');
+    
+//     if (window.scrollY > 50 && !document.body.classList.contains('dark-theme')) {
+//         header.classList.add('scroll-header');
+//         logo.src = 'assets/images/logo.png'; // مسار صورة الشعار الجديدة في الوضع الفاتح
+//     } else {
+//         header.classList.remove('scroll-header');
+//         logo.src = 'assets/images/logooooo.png'; // مسار صورة الشعار الأصلية
+//     }
+// });
 
+
+// const themeButton = document.getElementById('theme-button');
+// const darkTheme = 'dark-theme';
+// const iconTheme = 'uil-sun';
+
+// const selectedTheme = localStorage.getItem('selected-theme');
+// const selectedIcon = localStorage.getItem('selected-icon');
+
+// const logoImg = document.querySelector('.logo__img');
+
+// // Function to change logo based on theme
+// const setLogoForTheme = (theme) => {
+//     if (theme === 'dark') {
+//         // Keep the logo as it is for dark theme
+//     } else {
+//         // Change logo for light theme
+//         logoImg.src = 'assets/images/logo.png'; // مسار الشعار الأصلي هنا
+//     }
+// };
+
+// // Function to get current theme
+// const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light';
+
+// // Toggle dark mode with button click
+// themeButton.addEventListener('click', () => {
+//     // Toggle dark mode
+//     document.body.classList.toggle(darkTheme);
+    
+//     // Set logo based on current theme after toggling
+//     setLogoForTheme(getCurrentTheme());
+    
+//     // Save theme in localStorage
+//     localStorage.setItem('selected-theme', getCurrentTheme());
+// });
+
+// // Check previously selected theme and set logo accordingly
+// if (selectedTheme) {
+//     document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme);
+//     setLogoForTheme(selectedTheme);
+// }
+
+
+// window.addEventListener('scroll', function() {
+//     var header = document.querySelector('.header');
+//     var logo = document.querySelector('.header .nav img');
+    
+//     if (window.scrollY > 50) {
+//         header.classList.add('scroll-header');
+//         if (!document.body.classList.contains('dark-theme')) {
+//             logo.src = 'assets/images/logo.png'; // مسار صورة الشعار الجديدة في الوضع الفاتح
+//         }
+//     } else {
+//         header.classList.remove('scroll-header');
+//         if (!document.body.classList.contains('dark-theme')) {
+//             logo.src = 'assets/images/logooooo.png'; // مسار صورة الشعار الأصلية
+//         }
+//     }
+// });
+
+window.addEventListener('scroll', function() {
+    if (window.innerWidth < 768) {
+        return; // إذا كان عرض الشاشة أقل من 768 بكسل، لا يتم تنفيذ باقي الكود
+    }
+
+    var header = document.querySelector('.header');
+    var logo = document.querySelector('.header .nav img');
+    
+    if (window.scrollY > 50) {
+        header.classList.add('scroll-header');
+        if (!document.body.classList.contains('dark-theme')) {
+            logo.src = 'assets/images/logo.png'; // مسار صورة الشعار الجديدة في الوضع الفاتح
+        }
+    } else {
+        header.classList.remove('scroll-header');
+        if (!document.body.classList.contains('dark-theme')) {
+            logo.src = 'assets/images/logooooo.png'; // مسار صورة الشعار الأصلية
+        }
+    }
+});
+
+const themeButton = document.getElementById('theme-button');
+const darkTheme = 'dark-theme';
+const iconTheme = 'uil-sun';
+
+const selectedTheme = localStorage.getItem('selected-theme');
+const selectedIcon = localStorage.getItem('selected-icon');
+
+const logoImg = document.querySelector('.logo__img');
+
+// Function to change logo based on theme
+const setLogoForTheme = (theme) => {
+    if (theme === 'dark') {
+        // Keep the logo as it is for dark theme
+        logoImg.src = 'assets/images/logooooo.png'; // مسار الشعار الأصلي هنا
+
+    } else {
+        // Change logo for light theme
+        logoImg.src = 'assets/images/logo.png'; // مسار الشعار الأصلي هنا
+    }
+};
+
+// Function to get current theme
+const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light';
+
+// Toggle dark mode with button click
+themeButton.addEventListener('click', () => {
+    // Toggle dark mode
+    document.body.classList.toggle(darkTheme);
+    
+    // Set logo based on current theme after toggling
+    setLogoForTheme(getCurrentTheme());
+    
+    // Save theme in localStorage
+    localStorage.setItem('selected-theme', getCurrentTheme());
+});
+
+// Check previously selected theme and set logo accordingly
+if (selectedTheme) {
+    document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme);
+    setLogoForTheme(selectedTheme);
+}
